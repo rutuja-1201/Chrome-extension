@@ -1,0 +1,17 @@
+{
+    "manifest_version": 3,
+    "name": "Indian Headline Rhymes",
+    "version": "1.0",
+    "description": "Change major Indian newspaper headlines into mini rhymes.",
+    "permissions": ["activeTab", "scripting"],
+    "action": {
+      "default_popup": "popup.html"
+    },
+    "content_scripts": [
+      {
+        "matches": ["*://www.thehindu.com/*"],
+        "js": ["content.js"]
+      }
+    ]
+  }
+  
